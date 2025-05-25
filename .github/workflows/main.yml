@@ -1,0 +1,5 @@
+- name: Run script with CORS workaround
+  run: |
+    curl -H "Origin: https://github.com" \
+         -H "Access-Control-Request-Method: GET" \
+         https://api.example.com
